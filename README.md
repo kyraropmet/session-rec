@@ -140,7 +140,7 @@ At the end of the experiments, you can find the list of recommended items under 
             the conf/in folder.
         </li>
         <li>
-            Using Anaconda: 
+            <b>Using Anaconda:</b> </br>
             Run the following command from the main folder: </br>
             <code>
                 python run_config.py conf/in conf/out
@@ -151,7 +151,7 @@ At the end of the experiments, you can find the list of recommended items under 
             </code>
         </li>
         <li>
-            Using Docker: 
+            <b>Using Docker: </b> </br>
             Run the following command from the main folder: </br>
             <code>
                 ./dpython run_config.py conf/in conf/out
