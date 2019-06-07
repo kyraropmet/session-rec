@@ -66,6 +66,22 @@ To run session-rec, the following libraries are required:
 </ul>
 
 <h2>Installation</h2>
+<h3>
+    Using Anaconda (Windows users)
+</h3>
+<ol>
+    <li>Download and Install Anaconda (https://www.anaconda.com/distribution/)</li>
+    <li>Run the following commands:
+        <ol>
+            <li><code>git clone https://github.com/kyraropmet/session-rec.git</code></li>
+            <li><code>conda install --yes --file .\requirements_conda.txt</code></li>
+            <li><code>pip install -r .\requirements_pip.txt</code></li>      
+        </ol>
+    </li>
+</ol>
+<h3>
+    Using docker (Linux users with a GPU that supports Cuda9)
+</h3>
 <ol>
     <li>Download and Install Docker (https://www.docker.com/)</li>
     <li>Run the following commands:
@@ -124,6 +140,18 @@ At the end of the experiments, you can find the list of recommended items under 
             the conf/in folder.
         </li>
         <li>
+            Using Anaconda: 
+            Run the following command from the main folder: </br>
+            <code>
+                python run_config.py conf/in conf/out
+            </code></br>
+            If you want to run a specific configuration file, run the following command:</br>
+            <code>
+                python run_config.py conf/example_next.yml
+            </code>
+        </li>
+        <li>
+            Using Docker: 
             Run the following command from the main folder: </br>
             <code>
                 ./dpython run_config.py conf/in conf/out
