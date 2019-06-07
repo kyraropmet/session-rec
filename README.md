@@ -61,8 +61,12 @@ To run session-rec, the following libraries are required:
     <li>Dill</li>
     <li>Pandas</li>
     <li>Theano</li>
+    <li>Pyyaml</li>
     <li>CUDA</li>
     <li>Tensorflow</li>
+    <li>Theano</li>
+    <li>Psutil</li>
+    <li>Python-telegram-bot</li>
 </ul>
 
 <h2>Installation</h2>
@@ -103,7 +107,7 @@ The data folder contains a small sample dataset. It's possible to have an overvi
             example_multiple.yml to predict the remaining items of the session.
         </li>
     </ul>
-At the end of the experiments, you can find the list of recommended items under the folder "recommendations". 
+At the end of the experiments, you can find the list of recommended items under the folder Results with the suffix "Saver@". 
 
 <h2>How to Run It</h2>
 <ol>
@@ -136,9 +140,9 @@ At the end of the experiments, you can find the list of recommended items under 
     </h3>
     <ol>
         <li>
-            Configure a configuration file <b>*.yml</b> and put it in conf/in folder. Examples of configuration
+            Configure a configuration file <b>*.yml</b> and put it into the folder named conf/in. Examples of configuration
             files are listed in the the conf folder. It is possible to configure multiple files and put them all in
-            the conf/in folder.
+            the conf/in folder. When a configuration file in conf/in has been executed, it will be moved to the folder conf/out.
         </li>
         <li>
             <b>Using Anaconda:</b> </br>
@@ -237,7 +241,7 @@ At the end of the experiments, you can find the list of recommended items under 
         <tr>
             <td scope="row">opts</td>
             <td>opts: {sessions_test: 10}</td>
-            <td>Number of session used as a test during the optimization phase.<br>
+            <td>Number of sessions used as a test during the optimization phase.<br>
             </td>
         </tr>
         <tr>
