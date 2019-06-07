@@ -140,7 +140,7 @@ At the end of the experiments, you can find the list of recommended items under 
     </h3>
     <ol>
         <li>
-            Configure a configuration file <b>*.yml</b> and put it into the folder named conf/in. Examples of configuration
+            Create folders conf/in and conf/out. Configure a configuration file <b>*.yml</b> and put it into the folder named conf/in. Examples of configuration
             files are listed in the the conf folder. It is possible to configure multiple files and put them all in
             the conf/in folder. When a configuration file in conf/in has been executed, it will be moved to the folder conf/out.
         </li>
