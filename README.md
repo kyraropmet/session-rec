@@ -74,8 +74,8 @@ To run session-rec, the following libraries are required:
     <li>Run the following commands:
         <ol>
             <li><code>git clone https://github.com/kyraropmet/session-rec.git</code></li>
-            <li><code>conda install --yes --file .\requirements_conda.txt</code></li>
-            <li><code>pip install -r .\requirements_pip.txt</code></li>      
+            <li><code>conda install --yes --file requirements_conda.txt</code></li>
+            <li><code>pip install -r requirements_pip.txt</code></li>      
         </ol>
     </li>
 </ol>
