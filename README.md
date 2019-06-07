@@ -107,7 +107,7 @@ The data folder contains a small sample dataset. It's possible to have an overvi
             example_multiple.yml to predict the remaining items of the session.
         </li>
     </ul>
-At the end of the experiments, you can find the list of recommended items under the folder Results with the suffix "Saver@". 
+At the end of the experiments, you can find the evalutaion results in the "results" folder. You can also find the list of recommended items under the "results" folder with the suffix "Saver@". 
 
 <h2>How to Run It</h2>
 <ol>
